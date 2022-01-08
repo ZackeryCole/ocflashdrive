@@ -22,7 +22,7 @@ elif [[ -f /etc/arch-release ]]; then
 	pacman -Sy --noconfirm --needed wget curl p7zip
 elif [[ -f /etc/alpine-release ]]; then
 	apk add wget curl p7zip sgdisk
-	print "You are running on Alpine Linux. Cool!"
+	printf "You are running on Alpine Linux. Cool!"
 else
 	printf "Your distro is not supported!\n"
 	exit 1
