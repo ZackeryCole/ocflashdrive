@@ -70,7 +70,7 @@ burning(){
 #    COPYING IMAGE TO THE DRIVE    # 
 #################################### 
 EOF
-dd bs=8M if="$PWD/base.hfs" of="$drive"2 status=progress oflag=sync
+dd bs=8M if="$PWD/base.hfs" of="$drive"2
 rm -rf -- *.hfs
 umount "$drive"?* || :
 sleep 3s
